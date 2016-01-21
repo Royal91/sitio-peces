@@ -1,0 +1,18 @@
+{% extends '::base.html.twig' %}
+        {% block stylesheets %}
+        <link href="{{ asset('bundles/home/css/home.css') }}" rel="stylesheet" type="text/css" />
+        <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Old+Standard+TT' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+        {% endblock %}
+
+{% block body %}
+<div id="base">
+	<div id="add" class="buttons"><a href="{{ path('add') }}">Realizar Reporte</a></div>
+	<div id="consult" class="buttons"><a href="{{ path('consultar') }}">Consultar</a></div>
+</div>
+
+{% endblock %}

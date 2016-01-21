@@ -1,0 +1,11 @@
+home_homepage:
+    pattern:  /home
+    defaults: { _controller: homeBundle:Default:home }
+
+add:
+    pattern:     /add
+    defaults: { _controller: homeBundle:Default:add }
+
+consultar:
+    pattern:    /consultar
+    defaults: { _controller: homeBundle:Default:consultar }
